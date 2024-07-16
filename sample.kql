@@ -1,0 +1,20 @@
+select
+acode,
+owam,
+efdate, 
+coupon, 
+dq30,
+cscore, 
+ltype, 
+oface,
+count(loan_id)
+from mytable
+where mtrx_pct = '100'
+group by acode, 
+owam,
+efdate, 
+coupon, 
+dq30,
+cscore, 
+ltype, 
+oface
